@@ -1,0 +1,45 @@
+.box__style {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow($clear-blue 2px 2px);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 19rem;
+  background-color: $trans-blue;
+  line-height: 1.5rem;
+  margin: 2rem 1.8rem 3rem 1.8rem;
+  
+}
+.txt__red {
+  color: $red;
+  font-weight: 800;
+}
+.txt__blue {
+  color: $blue-shadow;
+  font-weight: 800;
+}
+
+.news__img {
+  width: 19rem;
+  margin: -1rem 0 1rem 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: $clear-blue 2px solid;
+  height: 6rem;
+}
+.btn {
+  background-color: $red;
+  width: 12rem;
+  height: 2.75rem;
+  border-radius: 50rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $background;
+  font-weight: 800;
+  position: absolute;
+  left: 5.5rem;
+}
