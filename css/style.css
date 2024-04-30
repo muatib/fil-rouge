@@ -53,6 +53,7 @@
 body {
   background-color: #213744;
   color: white;
+  overflow-x: hidden;
 }
 
 * {
@@ -78,50 +79,93 @@ body {
 .header__logo {
   position: relative;
   top: 1rem;
-  right: 0.5rem;
+  left: 2.3rem;
 }
 
 .menu__toggle {
-  display: inline-block;
-  cursor: pointer;
+  height: 27px;
+  width: 30px;
+  margin: 50px;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+  left: 2.5rem;
 }
-
-.bar {
-  width: 2rem;
-  height: 0.2rem;
-  background-color: #DF2E2E;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.menu__container {
-  display: none;
-}
-
-.menu__container-active {
+.menu__toggle .menu__toggle-bar,
+.menu__toggle .menu__toggle-bar:before,
+.menu__toggle .menu__toggle-bar:after {
+  background: red;
   display: block;
-  background-color: gray;
-  width: 150px;
-  border-radius: 0.5rem;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+.menu__toggle .menu__toggle-bar:before,
+.menu__toggle .menu__toggle-bar:after {
+  content: "";
+}
+.menu__toggle .menu__toggle-bar:before {
+  left: 0px;
+  top: -10px;
+  width: 27px;
+}
+.menu__toggle .menu__toggle-bar {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+.menu__toggle .menu__toggle-bar:after {
+  left: 0px;
+  top: 10px;
+  width: 27px;
+}
+.menu__toggle.close .menu__toggle-bar:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+.menu__toggle.close .menu__toggle-bar {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+.menu__toggle.close .menu__toggle-bar:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
 }
 
-.menu__container-lst {
-  list-style: none;
+#menu {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#menu .menu__container {
   padding: 0;
 }
-
-.menu__container-lst-itm {
-  margin-bottom: 10px;
-  padding: 10px 20px;
-}
-
-.menu__container-lst-lnk {
+#menu .menu__container-lnk {
+  color: #fff;
+  display: block;
+  font-size: 32px;
+  margin-bottom: 30px;
   text-decoration: none;
-  color: #ffffff;
-}
-
-.menu__container-lst-lnk:hover {
-  color: gold;
 }
 
 .main__content {
