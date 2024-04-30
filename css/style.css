@@ -33,6 +33,7 @@
 
 .btn {
   background-color: #DF2E2E;
+  border: none;
   width: 12rem;
   height: 2.75rem;
   border-radius: 50rem;
@@ -44,6 +45,12 @@
   font-weight: 800;
   position: absolute;
   left: 5.5rem;
+  filter: drop-shadow(rgba(119, 176, 230, 0.952) 4px 4px 8px);
+}
+
+.main__img {
+  position: relative;
+  filter: drop-shadow(rgba(119, 176, 230, 0.952) 1px 1px);
 }
 
 :root {
@@ -80,6 +87,7 @@ body {
   position: relative;
   top: 1rem;
   left: 2.3rem;
+  filter: drop-shadow(rgba(119, 176, 230, 0.952) 1px 1px);
 }
 
 .menu__toggle {
@@ -177,29 +185,27 @@ body {
 }
 
 .main__content-img1 {
-  position: relative;
-  top: 4rem;
+  top: 4.5rem;
   right: 0.3rem;
   z-index: 1000;
 }
 
 .main__content-img2 {
-  position: relative;
-  left: 19rem;
+  left: 19.3rem;
   top: 4rem;
   z-index: 1000;
 }
 
 .main__content-img3 {
-  position: relative;
-  left: 6rem;
+  left: 7.5rem;
   top: 1rem;
+  margin-top: -1.5rem;
 }
 
 .main__content-img4 {
-  position: relative;
-  top: 2rem;
-  left: 2.5rem;
+  top: 2.2rem;
+  left: 2rem;
+  margin-top: 0.5rem;
 }
 
 .news__content {
@@ -213,7 +219,6 @@ body {
 }
 
 .main__content-img5 {
-  position: relative;
   left: 8rem;
 }
 
@@ -243,4 +248,19 @@ body {
 
 .footer__icn-img {
   width: 2rem;
+}
+
+.game__ttl {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.game__img {
+  border-radius: 1rem;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

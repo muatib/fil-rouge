@@ -31,6 +31,7 @@
 }
 .btn {
   background-color: $red;
+  border: none;
   width: 12rem;
   height: 2.75rem;
   border-radius: 50rem;
@@ -42,4 +43,9 @@
   font-weight: 800;
   position: absolute;
   left: 5.5rem;
+  filter: drop-shadow($clear-blue 4px 4px 8px);
+}
+.main__img{
+  position: relative;
+  filter: drop-shadow($clear-blue 1px 1px);
 }

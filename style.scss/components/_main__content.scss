@@ -5,36 +5,33 @@
   margin: 0 0 1.5rem 0;
 }
 .main__content-img1 {
-  position: relative;
-  top: 4rem;
+  top: 4.5rem;
   right: 0.3rem;
   z-index: 1000;
 }
 .main__content-img2 {
-  position: relative;
-  left: 19rem;
+  left: 19.3rem;
   top: 4rem;
   z-index: 1000;
 }
-.main__content-img3{
-  position: relative;
-  left: 6rem;
+.main__content-img3 {
+  left: 7.5rem;
   top: 1rem;
+  margin-top: -1.5rem;
 }
-.main__content-img4{
-  position: relative;
-  top: 2rem;
-  left: 2.5rem;
+.main__content-img4 {
+  top: 2.2rem;
+  left: 2rem;
+  margin-top: 0.5rem;
 }
-.news__content{
+.news__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.news__content-ttl{
+.news__content-ttl {
   margin: 1rem;
 }
-.main__content-img5{
- position: relative;
- left: 8rem;
+.main__content-img5 {
+  left: 8rem;
 }
