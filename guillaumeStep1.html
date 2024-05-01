@@ -25,33 +25,38 @@
         Incidunt aliquam nobis dolor asperiores commodi non soluta, quibusdam
         excepturi veritatis, assumenda quos eum nulla dignissimos omnis impedit
         vel delectus tempore rem iure velit illum animi ab exercitationem ipsum.
-        Provident, sed facere hic voluptatibus dolores quidem error, quo
-        mollitia exercitationem laboriosam obcaecati ipsum dignissimos
-        necessitatibus quos, sunt quas placeat autem itaque aliquid voluptates
-        illo in aspernatur? Eveniet nobis eaque cumque, nesciunt illum totam
-        dolores nostrum iusto quisquam fugit natus distinctio.
+        Provident.
       </p>
-      <form class="game__form" action="" method="get">
-        <input class="game__form-txt" type="text" placeholder="Réponse" />
-        <input
-          class="game__form-btn btn"
-          type="submit"
-          value="valider la réponse"
-        />
-      </form>
+      <div class="game__form" >
+        <input class="game__form-txt" type="text" placeholder="Réponse" id="answer" />
+        <button class="game__form-btn btn" type="button" onclick="getAnswer()">valider</button>
+      </div>
     </main>
     <footer class="game__footer">
-      <a class="link" href="jeux.html"
-        ><button class="game__btn">accueil</button></a
-      >
-      <button class="button game__btn" href="#" onclick="show('popup')">
+     
+      <button class="game__btn" href="#" onclick="show('popupk')">
+        accueil
+      </button>
+      <div class="popupk box__style" id="popupk">
+        <p class="popupk__txt " >
+         Souhaitez vous vraiment quitter ?
+        </p>
+        <img class="popupk__img" src="/img/detective_interroge-removebg-preview.webp" alt="">
+        <div class="popk-btn">
+        <a class="link" href="#" onclick="hide('popupk')"><button class="btn popk__btn">continuer</button></a>
+        <a class="link" href="index.html" onclick="hide('popupk')"><button class="btn popk__btn">quitter</button></a>
+      </div>
+      </div>
+      <button class=" game__btn" href="#" onclick="show('popup')">
         indice
       </button>
-
-     
-
-
-
+      <div class="popup box__style" id="popup">
+        <p class="popup__txt " >
+          Ceci est un indice qui vous permettra de peut être résoudre cette énigme !
+        </p>
+        
+        <a class="link" href="#" onclick="hide('popup')"><button class="btn pop__btn">fermer</button></a>
+      </div>
     </footer>
     <script src="/main.js"></script>
   </body>

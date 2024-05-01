@@ -8,28 +8,27 @@
   width: 19rem;
   background-color: $trans-blue;
   line-height: 1.5rem;
-  // margin: 0.5rem 1.8rem 4.5rem 1.8rem;
-  margin:  0 auto ;
+  margin: 0 auto;
 }
 .txt__red {
   color: $red;
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px );
+  filter: drop-shadow(black 1.5px 1.5px);
 }
 .txt__blue {
   color: $blue-shadow;
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px );
+  filter: drop-shadow(black 1.5px 1.5px);
 }
-.txt__gold{
+.txt__gold {
   color: $gold;
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px );
+  filter: drop-shadow(black 1.5px 1.5px);
 }
-.txt__purple{
+.txt__purple {
   color: $purple;
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px );
+  filter: drop-shadow(black 1.5px 1.5px);
 }
 
 .news__img {
@@ -43,7 +42,7 @@
 .btn {
   display: block;
   margin: 0 auto;
-   background-color: $red;
+  background-color: $red;
   border: none;
   width: 12rem;
   height: 2.75rem;
@@ -51,15 +50,15 @@
   text-transform: uppercase;
   color: $background;
   font-weight: 800;
-  
+
   filter: drop-shadow($clear-blue 4px 4px 8px);
-  
-  &.btn:hover{
+
+  &.btn:hover {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
     filter: drop-shadow($red 4px 4px 8px);
   }
-  &.btn:active{
+  &.btn:active {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
     filter: drop-shadow($red 4px 4px 8px);
@@ -81,53 +80,17 @@
   font-weight: 800;
   filter: drop-shadow($clear-blue 4px 4px 8px);
 
-  &.game__btn:hover{
+  &.game__btn:hover {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
     filter: drop-shadow($red 4px 4px 8px);
   }
-  &.game__btn:active{
+  &.game__btn:active {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
     filter: drop-shadow($red 4px 4px 8px);
   }
 }
-.box-content{
+.box-content {
   margin-bottom: 4rem;
-}
-.popup {
-  display: none;
-  position: fixed;
-  padding: 10px;
-  width: 280px;
-  left: 50%;
-  margin-left: -150px;
-  height: 180px;
-  top: 50%;
-  margin-top: -100px;
-  background: #FFF;
-  border: 3px solid #F04A49;
-  z-index: 20;
-}
-
-#popup:after {
-  position: fixed;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: -2;
-}
-
-#popup:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #FFF;
-  z-index: -1;
 }
