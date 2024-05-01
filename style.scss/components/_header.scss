@@ -30,7 +30,7 @@
   .menu__toggle-bar,
   .menu__toggle-bar:before,
   .menu__toggle-bar:after {
-    background: red;
+    background: $red;
     display: block;
     height: 2px;
     opacity: 1;
@@ -62,11 +62,13 @@
       top: 0px;
       transform: rotate(90deg);
       width: 27px;
+     
     }
     .menu__toggle-bar {
       transform: rotate(-45deg);
       top: 13px;
       width: 27px;
+      
     }
     .menu__toggle-bar:after {
       top: 0px;
@@ -80,7 +82,7 @@
 #menu {
   z-index: 1;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 50%;
   position: fixed;
   top: 0;
   height: 0;
@@ -88,19 +90,20 @@
   opacity: 0;
   text-align: center;
   padding-top: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &.overlay {
     visibility: visible;
     opacity: 1;
     padding-top: 100px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.932);
+    border-radius: 1rem;
   }
   .menu__container {
     padding: 0;
   }
   .menu__container-lnk {
-    color: #fff;
+    color: $gold;
     display: block;
     font-size: 32px;
     margin-bottom: 30px;

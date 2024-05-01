@@ -6,7 +6,8 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-top: $blue-shadow 2px solid;
-  height: 6rem;
+  margin-top: 2rem;
+  height: fit-content;
 }
 .footer__icn {
   display: flex;
