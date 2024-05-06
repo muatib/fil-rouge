@@ -11,24 +11,24 @@
   margin: 0  auto;
 }
 .txt__red {
-  color: $red;
+  
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px);
+  filter: drop-shadow($red 2px 2px);
 }
 .txt__blue {
-  color: $blue-shadow;
+  
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px);
+  filter: drop-shadow($clear-blue 2px 2px);
 }
 .txt__gold {
-  color: $gold;
+  
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px);
+  filter: drop-shadow($gold 2.5px 2.5px);
 }
 .txt__purple {
-  color: $purple;
+  
   font-weight: 800;
-  filter: drop-shadow(black 1.5px 1.5px);
+  filter: drop-shadow($purple 2.5px 2.5px);
 }
 
 .news__img {
@@ -42,7 +42,7 @@
 .btn {
   display: block;
   margin: 0 auto;
-  background-color: $red;
+  background-color: $white;
   border: none;
   width: 12rem;
   height: 2.75rem;
@@ -51,17 +51,17 @@
   color: $background;
   font-weight: 800;
 
-  filter: drop-shadow($clear-blue 4px 4px 8px);
+  filter: drop-shadow($blue-shadow 5px 5px  5px);
 
   &.btn:hover {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow($red 4px 4px 8px);
+    filter: drop-shadow($red 2px 2px 5px);
   }
   &.btn:active {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow($red 4px 4px 8px);
+    filter: drop-shadow($red 2px 2px 5px);
   }
 }
 
@@ -70,7 +70,7 @@
   filter: drop-shadow($clear-blue 1px 1px);
 }
 .game__btn {
-  background-color: $red;
+  background-color: $white;
   border: none;
   width: 9rem;
   height: 2.75rem;
@@ -78,17 +78,17 @@
   text-transform: uppercase;
   color: $background;
   font-weight: 800;
-  filter: drop-shadow($clear-blue 4px 4px 8px);
+  filter: drop-shadow($clear-blue 4px 4px 5px);
 
   &.game__btn:hover {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow($red 4px 4px 8px);
+    filter: drop-shadow($red 4px 4px 5px);
   }
   &.game__btn:active {
     background-color: $blue-shadow;
     transition: 0.3s ease-in-out;
-    filter: drop-shadow($red 4px 4px 8px);
+    filter: drop-shadow($red 4px 4px 5px);
   }
 }
 .box-content {

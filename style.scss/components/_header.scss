@@ -12,7 +12,7 @@
   left: 0;
   position: sticky;
   width: 100%;
-  z-index: 1000;
+  z-index: 2;
   
 }
 .header__logo {
@@ -21,6 +21,9 @@
   left: 2.3rem;
   filter: drop-shadow($clear-blue 1px 1px );
 }
+
+
+// MENU BURGER
 
 .menu__toggle {
   height: 27px;
@@ -34,7 +37,8 @@
   .menu__toggle-bar,
   .menu__toggle-bar:before,
   .menu__toggle-bar:after {
-    background: $red;
+    background: white;
+    filter: drop-shadow($red 1px 1px );
     display: block;
     height: 2px;
     opacity: 1;
@@ -83,10 +87,12 @@
     }
   }
 }
+// OVERLAY MENU BURGER
+
 #menu {
   z-index: 1;
   min-width: 100%;
-  min-height: 50%;
+  min-height: 70%;
   position: fixed;
   top: 0;
   height: 0;
